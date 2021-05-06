@@ -30,7 +30,7 @@
     "moment": "^2.29.1",
     "thread-loader": "^3.0.1",
     "typeface-roboto": "0.0.54",
-    "ua-parser-js": "^0.7.23",
+    "ua-parser-js": "^0.7.24",
     "url-loader": "^4.1.1",
     "vue-context": "^3.4.0",
     "vue-cookies": "^1.7.4",
