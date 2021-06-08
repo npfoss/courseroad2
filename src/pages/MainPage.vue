@@ -527,4 +527,8 @@ export default {
   .expanded-search {
     max-width: 22em;
   }
+
+  /deep/ div.v-toolbar__extension {
+    padding: 0 12px 0 24px !important;
+  }
 </style>

@@ -121,6 +121,30 @@
         <v-icon>add</v-icon>
       </v-btn>
     </v-flex>
+    <v-flex style="border-left: 1px solid rgba(0,0,0,.42);">
+      <v-btn
+          type="submit"
+          icon
+          flat
+          color="secondary"
+          data-cy="addRoadButton"
+          @click="all"
+      >
+        <v-icon>keyboard_arrow_down</v-icon>
+      </v-btn>
+    </v-flex>
+    <v-flex>
+      <v-btn
+          type="submit"
+          icon
+          flat
+          color="secondary"
+          data-cy="addRoadButton"
+          @click="none"
+      >
+        <v-icon>keyboard_arrow_up</v-icon>
+      </v-btn>
+    </v-flex>
   </v-layout>
 </template>
 
@@ -195,6 +219,14 @@ export default {
       this.$store.commit('setRoadName', { id: this.tabRoad, name: this.newRoadName });
       this.editDialog = false;
       this.newRoadName = '';
+    },
+    all: function () {
+      console.log('all');
+      this.$root.$refs.Road.all();
+    },
+    none: function () {
+      console.log('none');
+      this.$root.$refs.Road.none();
     }
   }
 };
